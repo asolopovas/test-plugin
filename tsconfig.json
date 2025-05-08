@@ -1,0 +1,57 @@
+{
+    "compilerOptions": {
+        // Enable latest features
+        "lib": [
+            "ESNext",
+            "DOM",
+        ],
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleDetection": "force",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "jsx": "react-jsx",
+        "allowJs": true,
+        // Bundler mode
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "allowSyntheticDefaultImports": true,
+        "verbatimModuleSyntax": true,
+        "noEmit": true,
+        // Best practices
+        "strict": true,
+        "skipLibCheck": true,
+        "noFallthroughCasesInSwitch": true,
+        // Some stricter flags (disabled by default)
+        "noUnusedLocals": false,
+        "sourceMap": true,
+        "noUnusedParameters": false,
+        "maxNodeModuleJsDepth": 0, // <--- ADD THIS
+        "noPropertyAccessFromIndexSignature": false,
+        "baseUrl": ".", // The root directory of the project
+        "typeRoots": [
+            "./src/types",
+        ],
+        "paths": {
+            "@src/*": [
+                "src/*"
+            ]
+        }
+    },
+    "resolve": {
+        "extensions": [
+            ".ts",
+            ".tsx",
+            ".js",
+            ".jsx"
+        ]
+    },
+    "include": [
+        "src",
+        "src/types/**/*.d.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "vendor"
+    ]
+}

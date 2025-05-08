@@ -1,0 +1,27 @@
+..bfg-report/
+..bfg-report/**
+.cache
+vendor/
+static/build/hot
+!public/vendor
+node_modules/
+static/build/vite-dev-server.json
+package-lock.json
+.phpunit.result.cache
+theme.json
+dist/**
+error_log
+.env
+.prompt.txt
+ssl/*
+
+# Editor directories and files
+.idea
+.pnp.js
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.log
+*.pid
+

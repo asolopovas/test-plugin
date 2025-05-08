@@ -1,0 +1,23 @@
+{
+    "name": "andrius/test",
+    "autoload": {
+        "psr-4": {
+            "Andrius\\Test\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "andrius",
+            "email": "andrius.solopovas@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6",
+        "php-http/curl-client": "^2.3"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}

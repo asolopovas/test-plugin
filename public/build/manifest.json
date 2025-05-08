@@ -1,0 +1,12 @@
+{
+  "editor.deps.json": {
+    "file": "assets/editor.deps-DRrbpNVc.json",
+    "src": "editor.deps.json"
+  },
+  "src/index.tsx": {
+    "file": "assets/index-Bgfy0zMI.js",
+    "name": "index",
+    "src": "src/index.tsx",
+    "isEntry": true
+  }
+}
