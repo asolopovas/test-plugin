@@ -2,17 +2,21 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from "vite"
 import laravel from "laravel-vite-plugin"
 import { wordpressPlugin } from '@roots/vite-plugin'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
     base: "/wp-content/plugins/test-plugin/public/build",
     plugins: [
+        // @ts-ignore
         laravel({
             input: [
                 "src/index.tsx",
             ],
             refresh: true,
         }),
-        wordpressPlugin()
+        // @ts-ignore
+        wordpressPlugin(),
+        react(),
     ],
     publicDir: "public/build",
     build: {
