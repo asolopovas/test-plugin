@@ -38,6 +38,10 @@ add_filter('admin_head', function () {
         Vite::useHotFile($hotFilePath);
     }
 
+    if (Vite::isRunningHot()) {
+        echo Vite::reactRefresh();
+    }
+
     $dependencies = json_decode(Vite::content('editor.deps.json'));
     foreach ($dependencies as $dependency) {
         if (! wp_script_is($dependency, 'enqueued')) {
